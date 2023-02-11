@@ -1,0 +1,921 @@
+*{
+  font-family: 'Poppins' sans-serif ;
+
+}
+.home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+    padding-top: 150px;
+}
+.sec_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1-img{
+    width: 72%;
+}
+.sec1-img img{
+    width: 100%;
+}
+
+
+/* ================== slike ========= */
+.header-hom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-slider>div {
+    margin: 0px 10px;
+}
+.slick-list {
+    margin: 0px -10px;
+}
+.slider {
+    width: 72%;
+    margin: 0 auto;
+    padding: 37px 0px 50px 0px;
+}
+.slick-arrow {
+    width: 36px;
+    height: 48px;
+    background: #FFFFFF;
+    opacity: 0.2;
+    border-radius: 0px 30px 30px 0px;
+}
+.slick-next {
+    border-radius: 30px 0px 0px 30px;
+}
+.carad {
+    width: 235px;
+    height: 405px;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: content;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.top-car {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+}
+.top-car h6{
+    padding-top: 10px;
+}
+.centr-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.star {
+    display: flex;
+    gap: 15px;
+}
+.stae span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 210%;
+    color: #A2A6B0;
+    font-family: 'Poppins';
+
+}
+.centr-car p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: #000000;
+    font-family: 'Poppins';
+}
+.basket-brt {
+    padding-left: 20px;
+    padding-top: 20px;
+    /* display: none; */
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.carad:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+    border-radius: 8px 8px 0px 0px;
+}
+.carad:hover .basket-brt {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    padding-left: 40px;
+}
+.carad .basket-brt button:hover{
+    background: #0156ff;
+    color: #FFFFFF;
+}
+.carad .basket-brt button:hover path{
+    fill: #FFFFFF;
+}
+.carad #like{
+    border: none;
+    background: none;
+    margin-left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.slick-slider button{
+    width: 30px;
+    height: 50px;
+    background: #999999;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: red;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-arrow{
+    opacity: 0.3;
+}
+
+.carad button{
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+}
+
+.basket-brt button {
+    padding: 5px 18px;
+    border: 2px solid #0156FF;
+    background: none;
+    border-radius: 30px;
+    color: #0156FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    gap: 10px;
+
+    transition: all 0.3s ease-in-out;
+}
+.bot-car {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.bot-car del {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: #666666;
+    font-family: 'Poppins'
+}
+.bot-car p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+    font-family: 'Poppins'
+}
+.header-slic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 14px 0px;
+}
+.header-slic p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 115%;
+    text-decoration-line: underline;
+    color: #0156FF;
+    cursor: pointer;
+    font-family: 'Poppins';
+
+}
+.header-slic h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+    font-family: 'Poppins';
+    
+}
+
+/* ======================== meplar    ================== */
+.meplar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.meplar-hed{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F7FF;
+}
+.meplarDv{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.left-mepla{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.bgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.oraqRasm{
+    position: relative;
+}
+.text-bg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 120px;
+}
+.text-bg h3{
+    width: 90px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.text-bg p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 115%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.right-mepla{
+    width: 62.5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.komo{
+    width: 235px;
+    height: 396px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.top-k{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.top-k p{
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 210%;
+    color: #78A962;
+}
+.top-k img{
+    padding-left: 50px;
+}
+.star1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+}
+.cen-k{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.texName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 29px;
+}
+.texName p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+}
+.bot-car1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.bot-car1 del {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: #666666;
+
+}
+.bot-car1 p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+}
+
+/* ============== reklama ================== */
+
+
+
+/* ===================== shop-com  =========== */
+
+.shop-com{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head-shop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 230px;
+}
+.head-shop p{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+    
+}
+
+.map-shop{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.rekol{
+    width: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.rekol h5{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #A2A6B0;
+}
+.rekol p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+.sec-3hom{
+    padding: 0px 0px 30px 0px !important;
+}
+/* ======================slike=============== */
+.imgsRec{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.imgsRec p{
+    width: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120.5%;
+    color: #272560;
+    background: #F5F7FF;
+    font-family: 'Poppins';
+    padding: 21px 0px;
+}
+/* =================== section 2 =============== */
+.sec_2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.sec_2l{
+    width: 22%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+.rek-dv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.rek-dv h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width: 50%;
+}
+.rek-dv p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 115%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 35px;
+    left: 75px;
+}
+.sec_2r{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.caradss{
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.caradss:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+}
+.caradss button{
+    border: none;
+    background: none;
+}
+.caradss:hover .basket-brt {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.caradss .basket-brt button:hover{
+    background: #0156ff;
+    color: #FFFFFF;
+}
+.caradss .basket-brt button:hover path{
+    fill: #FFFFFF;
+}
+.carad .top-car h6{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 210%;
+    color: #78A962;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.caradss .top-car h6{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 210%;
+    color: #78A962;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.caradss .basket-brt button {
+    padding: 5px 18px;
+    border: 2px solid #0156FF;
+    background: none;
+    border-radius: 30px;
+    color: #0156FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.caradss #like{
+    border: none;
+    background: none;
+    margin-left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.caradss:hover .basket-brt {
+    display: block;
+    transform: scale(1);
+    padding-left: 40px;
+}
+.sec_reklama{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 66px 0px;
+}
+.pol-img{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sec_3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.texct{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.texct h1{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+}
+.mXona{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.kom{
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.kom p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+.kom span{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #A2A6B0;
+}
+.sec-slide2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 59px 0px 10px 0px;
+}
+.text-slik{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: #F5F7FF;
+    padding: 50px 0px;
+    font-family: 'Poppins';
+
+}
+.slick-slider{
+    width: 90%;
+    left: 50px;
+}
+.text-slik .slick-slider button{
+    display: none;
+    z-index: -3;
+    opacity: 0;
+}
+.d1{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.d1 p{
+    /* width: 800px; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-start;
+    color: #000000;
+    padding-left: 50px;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.d1 p svg{
+    width: 150px;
+}
+.d1 h5{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+    padding-right: 30px;
+}
+.text-slik button{
+    margin-left: 60px;
+    padding: 5px 18px;
+    border: 2px solid #0156FF;
+    background: none;
+    border-radius: 30px;
+    color: #0156FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.text-slik button:hover{
+    background:#0156FF;
+    color:#FFFFFF;
+}
+.slick-dots{
+    width: 50%;
+    opacity: 1;
+    z-index: -3;
+}
+/* =============== media ========== */
+
+@media (max-width:1440px) {
+    .sec1-img{
+        width: 88%;
+    }
+    .slider{
+        width: 88%;
+    }
+    .imgsRec p{
+        width: 88%;
+    }
+    .sec_2l{
+        width: 18%;
+    }
+    .texct{
+        width: 88%;
+    }
+    .text-slik{
+        width: 80%;
+    }
+    .mXona{
+        width: 88%;
+    }
+}
+@media (max-width:1300px) {
+    .pol-img{
+        gap: 30px;
+    }
+    .sec_2r{
+        width: 60%;
+        justify-content: center;
+    }
+    .sec_2l{
+        width: 30%;
+        align-items: center;
+    }
+    .sec1-img{
+        width: 82%;
+    }
+    .slider {
+        width: 82%;
+        margin: 0 auto;
+        padding: 37px 0px 50px 0px;
+    }
+    .imgsRec p{
+        width: 92%;
+    }
+    .sec_2l{
+        width: 20%;
+    }
+    .sec_2r{
+        width: 80%;
+    }
+    .texct{
+        width: 92%;
+    }
+    .mXona{
+        width: 92%;
+    }
+    .sec-slide2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 10px 0px;
+    }
+    .text-slik {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background: #F5F7FF;
+        padding: 50px 0px;
+    }
+}
+@media (max-width:1100px) {
+    .sec_2{
+        padding: 0px;
+        gap: 0px;
+    }
+    .sec-slide2{
+        display: none;
+    }
+    .mXona{
+        justify-content: center;
+    }
+
+    .slick-slider{
+        width: 90%;
+        left: 0px;
+    }
+    .sec_2r{
+        justify-content: center;
+    }
+    .sec_2l{
+        padding-left: 50px;
+    }
+    
+}
+@media (max-width:1000px) {
+    .sec_2l{
+        width: 25%;
+        padding-left: 0px;
+    }
+    .sec_2r{
+        width: 75%;
+        justify-content: flex-start;
+    }
+}
+@media (max-width:900px) {
+    .sec_2{
+        padding: 0px 25px;
+    }
+    .sec_2l{
+        width: 25%;
+    }
+    .sec_2r{
+        width: 75%;
+        justify-content: center;
+    }
+}
+@media (max-width:800px) {
+    .sec_2{
+        padding: 0px 0px 0px 25px;
+    }
+    .sec_2r{
+        width: 80%;
+        justify-content: flex-end;
+    }
+    .basket-brt button {
+        padding: 2px 18px;
+        border: 2px solid #0156FF;
+        background: none;
+        border-radius: 30px;
+        color: #0156FF;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .carad{
+        height: 450px;
+    }
+}
+@media (max-width:750px) {
+    .sec_2{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .sec_2l{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .sec_2r{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgsRec p{
+        width: 100%;
+    }
+    .basket-brt button {
+        padding: 2px 18px;
+        border: 2px solid #0156FF;
+        background: none;
+        border-radius: 30px;
+        color: #0156FF;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        gap: 1px;
+    }
+}
+@media (max-width:650px) {
+    .home{
+        padding-top: 180px;
+    }
+}
+@media (max-width:400px) {
+    .pol-img{
+        flex-direction: column;
+    }
+    .slick-slider{
+        width: 90%;
+        left: 15px;
+    }
+}
+@media (max-width:364px) {
+    .home{
+        padding-top: 190px;
+    }
+}

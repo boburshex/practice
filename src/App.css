@@ -1,0 +1,857 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppinc' sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans:wght@700&family=Mulish&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Ruda:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;700&display=swap');
+button{cursor: pointer;}
+::-webkit-scrollbar{
+    width: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#root{
+    max-width: 1920px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+.nav-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+    background: #000000;
+}
+.headL p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #A2A6B0;
+    gap: 5px;
+    font-family: 'Poppins';
+
+}
+.headL p span{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+
+}
+.headC p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ACACAC;
+    gap: 10px;
+    font-family: 'Poppins';
+
+}
+.headC p span{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration-line:underline;
+    font-family: 'Poppins';
+
+}
+.headR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.headR a{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+
+}
+.navu{
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px 27px 0px;
+    border-bottom: 2px solid #CACDD8;
+    gap: 8%;
+    background: #FFFFFF;
+}
+.nav-item{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admn-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.admn-search img{
+    padding-left: 20px;
+}
+.k button{
+    background: none;
+    border: none;
+    position: relative;
+}
+.k button span{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0156FF;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-family: 'Poppins';
+}
+.nav-item ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Poppins';
+
+}
+.divInput{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins'; 
+
+}
+.divInput input{
+    width: 90%;
+    height: 40px;
+    background: #F5F7FF;
+    border-radius: 31px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+}
+.divInput input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A2A6B0;
+}
+.divInput p{
+    transform: rotate(45deg);
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ========================== footer =============== */
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+
+}
+.dispecher{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F7FF;
+    gap: 130px;
+    padding: 60px 0px 44px 0px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+.card h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 132.5%;
+    color: #000000;
+    padding: 25px 0px 13px 0px;
+
+}
+.card p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+    text-align: center;
+    opacity: 0.7;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #020203;
+    padding-top: 47px;
+}
+.fotT{
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fotTl{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.fotTl h1{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 132.5%;
+    color: #FFFFFF;
+}
+.fotTl p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 132.5%;
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.fotTr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.fotTr input{
+    width: 391px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    background:#000000;
+    padding-left: 15px;
+    color: #FFFFFF;
+
+}
+.fotTr input ::placeholder{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fotTr button{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: 2px solid #0156FF;
+    border-radius: 50px;
+    padding: 10px 14px;
+    background: repeat;
+    transition: all 0.3s ease-in-out;
+}
+.fotTr button:hover{
+    background: #0156FF;
+}
+.fotC{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-top: 45px;
+    padding-bottom: 36px;
+}
+.card1{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.card1 h1{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color:rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+}
+.card1 a{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color:#F5F7FF
+}
+.fotB{
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #FFFFFF;
+    opacity: 0.7;
+    padding: 17px 0px;
+}
+.fotBl{
+    display: flex;
+    gap: 15px;
+}
+.fotBc{
+    display: flex;
+    gap: 10px;
+}
+.fotBr p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 132.5%;
+    color: #FFFFFF;
+}
+.menu{
+    display: none;
+}
+.modal{
+    display: none;
+}
+.centr-car p{
+    cursor: pointer;
+}
+/* ================ hover ========== */
+
+.hoverDv{
+    font-family: 'Poppins';
+    display: flex;
+    width: 220px;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    transform: translateX(900px);
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    top: 61px;
+    left: -80px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 9;
+    /* backdrop-filter: blur(20px); */
+   
+}
+.hoverDv .bth{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hoverDv .bth button{
+    background: none;
+    border: 2px solid #0156FF;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: #0156FF;
+}
+.bth button:hover{
+    background: #0156FF;
+    color: #FFFFFF;
+}
+.swal2-actions{
+    display: flex;
+    gap: 20px;
+}
+.swal2-cancel{
+    background: red;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+.swal2-confirm{
+    background: rgb(4, 126, 21);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+.hoverDv1{
+    overflow: auto;
+    justify-content: flex-start;
+}
+.k{
+    position: relative;
+}
+.k:hover .hoverDv{
+    transform: translateX(0px);
+}
+.bth{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: #FFFFFF;
+}
+.hover-body{
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+}
+.cardsev{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1.3px solid #666666;
+    gap: 4px;
+}
+.cardsev2{
+    justify-content: space-evenly;
+}
+.cardsev img{
+    width: 80px;
+    height: 50px;
+}
+.cardsev p{
+    width: 30%;
+    font-size: 8px;
+}
+.soni{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    user-select: none;
+}
+.soni div{
+   padding: 1px 3px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid salmon;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 210%;
+   color: #000000;
+   cursor: pointer;
+   background: salmon;
+   border-radius: 30px;
+}
+.soni :nth-child(1){
+    border-radius: 5px 0px 0px 5px;
+}
+.soni :nth-child(2){
+    border-radius: 0px;
+}
+.soni :nth-child(3){
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* ==================================  media nav =================== */
+@media (max-width:1700px) {
+    .fotB{
+        width: 85%;
+    }
+}
+
+@media (max-width:1400px) {
+    .fotTl h1{
+        font-size: 28px;
+    }
+    .fotTl p{
+        font-size: 15px;
+    }
+    .fotT{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .fotTr input{
+        width: 291px;
+        height: 45px;
+    }
+    .fotTr button{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .fotC{
+        width: 100%;
+        gap: 0%;
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 30px 36px;
+    }
+    .card1 h1{
+        font-size: 12px;
+    }
+    .card1 a{
+        font-size: 12px;
+    }
+    .fotB{
+        width: 95%;
+    }
+}
+@media (max-width:1100px) {
+    .fotTl h1{
+        font-size: 20px;
+    }
+    .fotTl p{
+        font-size: 11px;
+    }
+    .fotTr input{
+        width: 221px;
+        height: 35px;
+    }
+    .fotTr button{
+        font-size: 11px;
+        font-weight: 500;
+        padding: 7px 12px;
+    }
+    .fotT{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .fotC{
+        gap: 2%;
+    }
+    .card1 h1{
+        font-size: 12px;
+    }
+    .card1 a{
+        font-size: 10px;
+    }
+    .card h3{
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    .fotB{
+        width: 95%;
+    }
+}
+@media (max-width: 1300px) {
+    .nav-item{
+        width: 500px;
+    }
+    .divInput{
+        width: 500px;
+    }
+    .hoverDv{
+        left: -100px;
+    }
+}
+@media (max-width:900px) {
+    .dispecher{
+        gap: 70px;
+    }
+    .card{
+        width: 230px;
+    }
+    .fotC{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fotT{
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+@media (max-width:950px) {
+    .nav-item{
+        width: 300px;
+    }
+    .divInput{
+        width: 300px;
+    }
+}
+@media (max-width:800px) {
+    .headL p{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .headL p span{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .headC p{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .headC p span{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .headR a{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .divInput{
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        height: 50px;
+        background: #FFFFFF;
+        left: 0px;
+        padding: 0px 20px;
+    }
+    .divInput input{
+        width: 90%;
+    }
+
+}
+@media (max-width:700px) {
+    .headL p{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .headL p span{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .headC p{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .headC p span{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .headR a{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .divInput{
+        width: 630px;
+        position: absolute;
+        z-index: 9;
+        height: 50px;
+        background: #FFFFFF;
+        left: 20px;
+    }
+    .divInput input{
+        width: 95%;
+    }
+    .hoverDv{
+        left: -120px;
+    }
+
+}
+@media (max-width:650px) {
+    .divInput{
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        height: 50px;
+        background: #FFFFFF;
+        left: 0px;
+        padding: 0px 20px;
+    }
+    .divInput input{
+        width: 90%;
+    }
+    .navu{
+        padding: 24px 15px 23px 15px;
+    }
+    .nav-header{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .fotB{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .dispecher{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:600px) {
+    #root{
+        overflow: hidden;
+    }
+    .nav-item{
+        display: none;
+    }
+    .navu{
+        justify-content: space-evenly;
+    }
+    .menu{
+        display: block;
+       padding-left: 40px;
+    }
+    .men{
+        font-size: 22px;
+    }
+    .menu button{
+        background: none;
+        border: none;
+    }
+    .menu:hover .modalAcl{
+        transform: translateX(0px);
+    }
+    
+    .modalAcl{
+        width: 40%;
+        height: 120px;
+        position: absolute;
+        z-index: 5;
+        right: 0px;
+        top: 188px;
+        background: #FFFFFF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-right: 50px;
+        padding-top: 20px;
+        transform: translateX(700px);
+        transition: all 0.4s ease-in-out;
+    }
+    .modalAcl ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+    .hoverDv{
+        left: 30px;
+        top: 58px;
+    }
+    .admn-search #ser{
+        display: none;
+    }
+    .divInput{
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .fotTl h1{
+        font-size: 15px;
+    }
+    .fotTl p{
+        font-size: 7px;
+    }
+    .fotTr input{
+        width: 150px;
+        height: 25px;
+    }
+    .fotTr button{
+        padding: 1px 9px;
+        font-size: 7px;
+    }
+    .fotTr input ::placeholder{
+        font-size: 5px;
+    }
+    .hoverDv{
+        left: 60px;
+    }
+}
+@media (max-width:450px) {
+    .fotT{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .fotTl h1{
+        font-size: 28px;
+    }
+    .fotTl p{
+        font-size: 12px;
+    }
+    .fotTr{
+        width: 100%;
+    }
+    .fotTr input{
+        width: 70%;
+    }
+    .hoverDv{
+        left: 0px;
+    }
+}
+@media (max-width:400px) {
+    .menu{
+        padding-left: 30px;
+    }
+    .fotTl h1{
+        font-size: 22px;
+    }
+    .fotC{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .hoverDv{
+        left: -30px;
+    }
+}
+@media (max-width:340px) {
+    .nav-header .headC p{
+        font-size: 8px;
+    }
+    .headC p span{
+        font-size: 8px;
+    }
+    .menu{
+        padding-left: 10px;
+    }
+    .fotTl h1{
+        font-size: 22px;
+    }
+    .fotC{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .hoverDv{
+        left: -50px;
+    }
+}

@@ -1,0 +1,79 @@
+*{
+  font-family: 'Poppins' sans-serif;
+
+}
+.faq{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+.faq_sec1{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 0px;
+}
+.faq_left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+.faq_left h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.Quotations{
+    display: flex;
+    flex-direction: column;
+}
+.Quotations span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding: 25px 0px;
+
+}
+.Quotations h4{
+    padding: 20px 0px;
+}
+.faq_right{
+    width: 38%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.faq_right .general{
+    width: 357px;
+    height: auto;
+    background: #F5F7FF;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 22px;
+    gap: 15px;
+}
+
+@media (max-width:800px) {
+    .faq_sec1{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+    .faq_left{
+        width: 95%;
+    }
+    .faq_right{
+        width: 95%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

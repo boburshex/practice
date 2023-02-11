@@ -1,0 +1,125 @@
+*{
+  font-family: 'Poppins' sans-serif;
+
+}
+.savatPage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+.savat-sec1{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.savat-sec1l{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 300px;
+}
+.sabasc{
+    width: 85%;
+    gap: 10px;
+}
+.sabasc img{
+    width: 150px;
+    height: 100px;
+}
+.sabasc p{
+    width: 50%;
+    font-size: 18px;
+}
+.savat-sec1r{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding-right: 30px; */
+}
+.shott{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #F5F7FF;
+    gap: 15px;
+    padding: 20px;
+}
+.shott p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media (max-width:1300px) {
+    .savat-sec1l{
+        padding-left: 150px;
+    }
+}
+
+@media (max-width:1100px) {
+    .sabasc p{
+        font-size: 13px;
+    }
+    .savat-sec1l{
+        width: 60%;
+    }
+}
+@media (max-width:950px) {
+    .savat-sec1l{
+        width: 60%;
+        padding-left: 75px;
+    }
+    
+}
+
+@media (max-width:750px) {
+    .savat-sec1l{
+        width: 90%;
+        padding-left: 0px;
+    }
+    .sabasc{
+        width: 100%;
+    }
+    .savat-sec1r{
+        width: 90%;
+        justify-content: flex-end;
+    }
+    .savat-sec1{
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (max-width:450px) {
+    .sabasc p{
+        font-size: 10px;
+    }
+    .sabasc img{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width:400px) {
+    .sabasc img{
+        width: 50px;
+        height: 50px;
+    }
+    .sabasc p{
+        font-size: 9px;
+    }
+    .sabasc span{
+        font-size: 12px;
+    }
+}
